@@ -1,7 +1,7 @@
-package com.arolla.banck.acount.service;
+package com.arolla.banck.acount.service.exception;
 
 
-public class OperationNotPermittedException extends  BusinessException {
+public class OperationNotPermittedException extends BusinessException {
         private static final long serialVersionUID = 8165936063601631290L;
 
         public OperationNotPermittedException(String message) {

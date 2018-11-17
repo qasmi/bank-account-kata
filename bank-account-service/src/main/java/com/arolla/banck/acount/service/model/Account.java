@@ -1,13 +1,12 @@
-package com.arolla.banck.acount.service;
+package com.arolla.banck.acount.service.model;
 
+import com.arolla.banck.acount.service.exception.OperationNotPermittedException;
 import lombok.*;
 
 import java.math.BigDecimal;
 import java.time.Clock;
 import java.time.Instant;
-import java.util.HashSet;
-import java.util.Set;
-import java.util.UUID;
+import java.util.*;
 
 @Data
 @Builder
@@ -22,40 +21,39 @@ public class Account {
         @NonNull
         private Client owner;
         @NonNull
-        private Solde solde;
+        private Balance balance;
         @Builder.Default
-        private Set<Operation> history =  new HashSet<>();
+        private List<Operation> history =  new ArrayList<>();
 
         public Account deposit(BigDecimal amount, Clock clock){
-                updateSolde(amount);
-                updateHistory(amount, clock);
+                updateBalance(amount);
+                updateHistory(OperationType.DEPOSIT, amount, clock);
                 return this;
         }
 
         public Account withdraw(BigDecimal amount, Clock clock){
-                if(solde.getAmount().compareTo(amount) == -1){
+                if(balance.getAmount().compareTo(amount) == -1){
                         throw new OperationNotPermittedException("Insufficient balance");
                 }
-                updateSolde(amount.multiply(new BigDecimal(-1)));
-                updateHistory(amount, clock);
+                updateBalance(amount.multiply(new BigDecimal(-1)));
+                updateHistory(OperationType.WITHDRAW, amount, clock);
                 return this;
         }
 
-        private void updateHistory(BigDecimal amount, Clock clock) {
+        private void updateHistory(OperationType operationType, BigDecimal amount, Clock clock) {
                 Operation operation = Operation.builder()
                         .id(UUID.randomUUID())
                         .creationDate(clock.instant())
                         .amount(amount)
-                        .status(OperationStatus.valide)
-                        .type(OperationType.DEPOSIT)
+                        .type(operationType)
                         .build();
                 history.add(operation);
         }
 
-        private void updateSolde(BigDecimal amount) {
-                solde = Solde.builder()
-                        .amount(solde.getAmount().add(amount))
-                        .currency(solde.getCurrency())
+        private void updateBalance(BigDecimal amount) {
+                balance = Balance.builder()
+                        .amount(balance.getAmount().add(amount))
+                        .currency(balance.getCurrency())
                         .build();
         }
 }
