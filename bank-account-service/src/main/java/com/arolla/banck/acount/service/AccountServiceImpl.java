@@ -5,7 +5,7 @@ import lombok.RequiredArgsConstructor;
 
 import java.math.BigDecimal;
 import java.time.Clock;
-import java.util.Optional;
+import java.util.List;
 import java.util.UUID;
 
 @RequiredArgsConstructor
@@ -16,15 +16,22 @@ public class AccountServiceImpl implements  AccountService {
 
         @Override
         public Account deposit(@NonNull String clientId, @NonNull UUID accountId, @NonNull BigDecimal amount) {
-                Optional<Account> loadedAccount =
-                        accoutRepository.findAccountByAccountIdAndClientId(accountId, clientId);
-                Account newAccount = doDeposit(loadedAccount
-                        .orElseThrow(() -> new AccountNotFoundException("Account {} not found " + accountId)), amount);
+                Account loadedAccount = checkAndGetAccount(clientId, accountId);
+                Account newAccount = loadedAccount.deposit(amount, clock);
                 accoutRepository.saveAccount(newAccount);
                 return newAccount;
         }
 
-        private Account doDeposit(Account account, BigDecimal amount) {
-               return account.updateAccount(amount, clock);
+        @Override
+        public Account withdraw(@NonNull String clientId, @NonNull UUID accountId, @NonNull BigDecimal amount) {
+                Account loadedAccount = checkAndGetAccount(clientId, accountId);
+                Account newAccount = loadedAccount.withdraw(amount, clock);
+                accoutRepository.saveAccount(newAccount);
+                return newAccount;
+        }
+
+        private Account checkAndGetAccount(String clientId, UUID accountId) {
+                return accoutRepository.findAccountByAccountIdAndClientId(accountId, clientId)
+                        .orElseThrow(() -> new AccountNotFoundException("Account {} not found " + accountId));
         }
 }
