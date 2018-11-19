@@ -1,0 +1,17 @@
+com\arolla\banck\acount\service\Currency.class
+com\arolla\banck\acount\service\AccountServiceImpl.class
+com\arolla\banck\acount\service\Solde.class
+com\arolla\banck\acount\service\Client.class
+com\arolla\banck\acount\service\Solde$SoldeBuilder.class
+com\arolla\banck\acount\service\Account$AccountBuilder.class
+com\arolla\banck\acount\service\OperationStatus.class
+com\arolla\banck\acount\service\Client$ClientBuilder.class
+com\arolla\banck\acount\service\AccountRepository.class
+com\arolla\banck\acount\service\Operation$OperationBuilder.class
+com\arolla\banck\acount\service\AccountNotFoundException.class
+com\arolla\banck\acount\service\CrudAccountRepository.class
+com\arolla\banck\acount\service\OperationType.class
+com\arolla\banck\acount\service\AccountService.class
+com\arolla\banck\acount\service\Account.class
+com\arolla\banck\acount\service\BusinessException.class
+com\arolla\banck\acount\service\Operation.class
