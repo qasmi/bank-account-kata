@@ -1,4 +1,4 @@
-package com.arolla.banck.acount.service.model;
+package com.arolla.banck.acount.service;
 
 import lombok.Builder;
 import lombok.Data;

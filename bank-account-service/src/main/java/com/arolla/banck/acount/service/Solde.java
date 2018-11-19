@@ -1,4 +1,4 @@
-package com.arolla.banck.acount.service.model;
+package com.arolla.banck.acount.service;
 
 import lombok.Builder;
 import lombok.Data;
@@ -8,7 +8,7 @@ import java.math.BigDecimal;
 
 @Data
 @Builder
-public class Balance {
+public class Solde {
         @NonNull
         private final BigDecimal amount;
         @Builder.Default
