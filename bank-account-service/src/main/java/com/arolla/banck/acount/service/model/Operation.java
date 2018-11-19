@@ -1,4 +1,4 @@
-package com.arolla.banck.acount.service;
+package com.arolla.banck.acount.service.model;
 
 import lombok.Builder;
 import lombok.Data;
@@ -16,10 +16,7 @@ public class Operation {
         @NonNull
         private final OperationType type ;
         @NonNull
-        private final OperationStatus status;
-        @NonNull
         private final Instant creationDate;
-        private final Instant validationDate;
         @NonNull
         private final BigDecimal amount;
 }

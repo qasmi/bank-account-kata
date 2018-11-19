@@ -1,4 +1,4 @@
-package com.arolla.banck.acount.service;
+package com.arolla.banck.acount.service.exception;
 
 public abstract class BusinessException extends RuntimeException {
         private static final long serialVersionUID = 523600001337000032L;
