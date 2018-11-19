@@ -3,6 +3,7 @@ com\arolla\banck\acount\service\AccountServiceImpl.class
 com\arolla\banck\acount\service\Solde.class
 com\arolla\banck\acount\service\Client.class
 com\arolla\banck\acount\service\Solde$SoldeBuilder.class
+com\arolla\banck\acount\service\OperationNotPermittedException.class
 com\arolla\banck\acount\service\Account$AccountBuilder.class
 com\arolla\banck\acount\service\OperationStatus.class
 com\arolla\banck\acount\service\Client$ClientBuilder.class

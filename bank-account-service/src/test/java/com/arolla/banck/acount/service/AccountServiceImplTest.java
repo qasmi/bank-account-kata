@@ -30,7 +30,7 @@ public class AccountServiceImplTest {
         }
 
         @Test
-        public void depot_should_save_2300_EUR(){
+        public void deposit_should_save_2300_EUR(){
 
                 Account actual = accountService.deposit(CLIENT_ID,ACCOUNT_ID, new BigDecimal(2300));
 
@@ -42,10 +42,38 @@ public class AccountServiceImplTest {
         }
 
         @Test
-        public void depot_should_throw_account_not_found_exception(){
+        public void deposit_should_throw_account_not_found_exception(){
 
                 assertThatThrownBy(() -> accountService.deposit(CLIENT_ID, INVALID_ACCOUNT_ID, new BigDecimal(2300)))
                         .isInstanceOf(AccountNotFoundException.class)
                         .hasMessageStartingWith("Account {} not found " + INVALID_ACCOUNT_ID);
+        }
+
+        @Test
+        public void withdraw_should_permit_retrieving_300_EUR(){
+
+                Account actual = accountService.withdraw(CLIENT_ID,ACCOUNT_ID, new BigDecimal(300));
+
+                assertThat(actual.getId()).isEqualTo(ACCOUNT_ID);
+                assertThat(actual.getSolde()).isEqualTo(Solde.builder().amount(new BigDecimal(0)).build());
+                assertThat(actual.getCreationDate()).isEqualTo(NOW);
+                assertThat(actual.getOwner()).isEqualTo(new Client("93405676", "arolla"));
+                assertThat(actual.getHistory().size()).isEqualTo(1);
+        }
+
+        @Test
+        public void withdraw_should_throw_account_not_found_exception(){
+
+                assertThatThrownBy(() -> accountService.withdraw(CLIENT_ID, INVALID_ACCOUNT_ID, new BigDecimal(2300)))
+                        .isInstanceOf(AccountNotFoundException.class)
+                        .hasMessageStartingWith("Account {} not found " + INVALID_ACCOUNT_ID);
+        }
+
+        @Test
+        public void withdraw_should_throw_operation_not_permitted_exception_when_retrieving_amount_is_more_than_balance() {
+                assertThatThrownBy(() -> accountService.withdraw(CLIENT_ID, ACCOUNT_ID, new BigDecimal(2300)))
+                        .isInstanceOf(OperationNotPermittedException.class)
+                        .hasMessageStartingWith("Insufficient balance");
+
         }
 }

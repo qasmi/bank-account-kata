@@ -2,6 +2,7 @@ C:\Users\cele\Documents\Dev\bank-account-kata\bank-account-service\src\main\java
 C:\Users\cele\Documents\Dev\bank-account-kata\bank-account-service\src\main\java\com\arolla\banck\acount\service\AccountServiceImpl.java
 C:\Users\cele\Documents\Dev\bank-account-kata\bank-account-service\src\main\java\com\arolla\banck\acount\service\AccountRepository.java
 C:\Users\cele\Documents\Dev\bank-account-kata\bank-account-service\src\main\java\com\arolla\banck\acount\service\OperationType.java
+C:\Users\cele\Documents\Dev\bank-account-kata\bank-account-service\src\main\java\com\arolla\banck\acount\service\OperationNotPermittedException.java
 C:\Users\cele\Documents\Dev\bank-account-kata\bank-account-service\src\main\java\com\arolla\banck\acount\service\BusinessException.java
 C:\Users\cele\Documents\Dev\bank-account-kata\bank-account-service\src\main\java\com\arolla\banck\acount\service\AccountNotFoundException.java
 C:\Users\cele\Documents\Dev\bank-account-kata\bank-account-service\src\main\java\com\arolla\banck\acount\service\CrudAccountRepository.java

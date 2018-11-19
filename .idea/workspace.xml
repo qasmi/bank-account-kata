@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e70480a8-842a-4205-8600-e1dddc1976b2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/bank-account-service/src/main/java/com/arolla/banck/acount/service/OperationNotPermittedException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bank-account-service/src/main/java/com/arolla/banck/acount/service/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/bank-account-service/src/main/java/com/arolla/banck/acount/service/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bank-account-service/src/main/java/com/arolla/banck/acount/service/AccountRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/bank-account-service/src/main/java/com/arolla/banck/acount/service/AccountRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bank-account-service/src/main/java/com/arolla/banck/acount/service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/bank-account-service/src/main/java/com/arolla/banck/acount/service/AccountService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bank-account-service/src/main/java/com/arolla/banck/acount/service/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/bank-account-service/src/main/java/com/arolla/banck/acount/service/AccountServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bank-account-service/src/main/java/com/arolla/banck/acount/service/OperationType.java" beforeDir="false" afterPath="$PROJECT_DIR$/bank-account-service/src/main/java/com/arolla/banck/acount/service/OperationType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bank-account-service/src/test/java/com/arolla/banck/acount/service/AccountServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/bank-account-service/src/test/java/com/arolla/banck/acount/service/AccountServiceImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bank-account-service/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bank-account-service/target/surefire-reports/TEST-com.arolla.banck.acount.service.AccountServiceImplTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bank-account-service/target/surefire-reports/com.arolla.banck.acount.service.AccountServiceImplTest.txt" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bank-account-service/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -32,25 +31,27 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="2" />
-          <entry key="java" value="17" />
+          <entry key="java" value="24" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="2" />
-          <entry key="JAVA" value="17" />
+          <entry key="JAVA" value="24" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1219" />
+          <entry key="dummy" value="21" />
+          <entry key="java" value="1896" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1219" />
+          <entry key="JAVA" value="1896" />
+          <entry key="PLAIN_TEXT" value="21" />
         </counts>
       </usages-collector>
     </session>
@@ -58,10 +59,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bank-account-service/src/main/java/com/arolla/banck/acount/service/AccountRepository.java">
+        <entry file="file://$PROJECT_DIR$/bank-account-service/src/main/java/com/arolla/banck/acount/service/Account.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="14" column="19" lean-forward="true" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+            <state relative-caret-position="-106">
+              <caret line="34" column="14" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -70,25 +71,21 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/bank-account-service/src/main/java/com/arolla/banck/acount/service/Account.java">
+        <entry file="file://$PROJECT_DIR$/bank-account-service/src/main/java/com/arolla/banck/acount/service/AccountServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="185">
+              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bank-account-service/src/main/java/com/arolla/banck/acount/service/AccountServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/bank-account-service/src/main/java/com/arolla/banck/acount/service/AccountService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+            <state relative-caret-position="187">
+              <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
               <folding>
-                <element signature="e#933#934#0" expanded="true" />
-                <element signature="e#1003#1004#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -97,29 +94,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bank-account-service/src/test/java/com/arolla/banck/acount/service/AccountServiceImplTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="39" column="88" selection-start-line="39" selection-start-column="88" selection-end-line="39" selection-end-column="88" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bank-account-service/src/main/java/com/arolla/banck/acount/service/AccountService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bank-account-service/src/main/java/com/arolla/banck/acount/service/BusinessException.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+            <state relative-caret-position="182">
+              <caret line="77" column="9" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -144,13 +120,14 @@
         <option value="$PROJECT_DIR$/bank-account-service/src/main/java/com/arolla/banck/acount/service/Client.java" />
         <option value="$PROJECT_DIR$/bank-account-service/src/main/java/com/arolla/banck/acount/service/AccoutRepository.java" />
         <option value="$PROJECT_DIR$/bank-account-service/src/main/java/com/arolla/banck/acount/service/CrudAccountRepository.java" />
-        <option value="$PROJECT_DIR$/bank-account-service/src/main/java/com/arolla/banck/acount/service/OperationType.java" />
         <option value="$PROJECT_DIR$/bank-account-service/src/main/java/com/arolla/banck/acount/service/OperationStatus.java" />
-        <option value="$PROJECT_DIR$/bank-account-service/src/main/java/com/arolla/banck/acount/service/AccountService.java" />
-        <option value="$PROJECT_DIR$/bank-account-service/src/main/java/com/arolla/banck/acount/service/AccountServiceImpl.java" />
         <option value="$PROJECT_DIR$/bank-account-service/src/main/java/com/arolla/banck/acount/service/AccountRepository.java" />
-        <option value="$PROJECT_DIR$/bank-account-service/src/test/java/com/arolla/banck/acount/service/AccountServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/bank-account-service/src/main/java/com/arolla/banck/acount/service/OperationType.java" />
+        <option value="$PROJECT_DIR$/bank-account-service/src/main/java/com/arolla/banck/acount/service/OperationNotPermittedException.java" />
         <option value="$PROJECT_DIR$/bank-account-service/src/main/java/com/arolla/banck/acount/service/Account.java" />
+        <option value="$PROJECT_DIR$/bank-account-service/src/main/java/com/arolla/banck/acount/service/AccountService.java" />
+        <option value="$PROJECT_DIR$/bank-account-service/src/test/java/com/arolla/banck/acount/service/AccountServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/bank-account-service/src/main/java/com/arolla/banck/acount/service/AccountServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -247,7 +224,13 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542492023613" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542494912634" />
+    <property name="extract.method.default.visibility" value="private" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.arolla.banck.acount.service" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -261,7 +244,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AccountServiceImplTest">
+  <component name="RunManager" selected="JUnit.AccountServiceImplTest.withdraw_should_permit_retrieving_300_EUR">
     <configuration name="AccountServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bank-account-service" />
       <extension name="coverage">
@@ -308,13 +291,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AccountServiceImplTest.withdraw_should_permit_retrieving_300_EUR" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bank-account-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.arolla.banck.acount.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.arolla.banck.acount.service" />
+      <option name="MAIN_CLASS_NAME" value="com.arolla.banck.acount.service.AccountServiceImplTest" />
+      <option name="METHOD_NAME" value="withdraw_should_permit_retrieving_300_EUR" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="JUnit.AccountServiceImplTest" />
       <item itemvalue="JUnit.AccountServiceImplTest.depot_should_save_mony_when_client_and_account_exist" />
       <item itemvalue="JUnit.AccountServiceImplTest.depot_should_throw_account_not_found_exception" />
+      <item itemvalue="JUnit.AccountServiceImplTest.withdraw_should_permit_retrieving_300_EUR" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AccountServiceImplTest.withdraw_should_permit_retrieving_300_EUR" />
         <item itemvalue="JUnit.AccountServiceImplTest" />
         <item itemvalue="JUnit.AccountServiceImplTest.depot_should_throw_account_not_found_exception" />
         <item itemvalue="JUnit.AccountServiceImplTest.depot_should_save_mony_when_client_and_account_exist" />
@@ -335,34 +336,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AccountServiceImplTest_depot_should_save_mony_when_client_and_account_exist - 2018.11.17 at 22h 12m 31s.xml">
-      <configuration name="AccountServiceImplTest.depot_should_save_mony_when_client_and_account_exist" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AccountServiceImplTest_depot_should_save_mony_when_client_and_account_exist - 2018.11.17 at 22h 17m 05s.xml">
-      <configuration name="AccountServiceImplTest.depot_should_save_mony_when_client_and_account_exist" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AccountServiceImplTest_depot_should_save_mony_when_client_and_account_exist - 2018.11.17 at 22h 26m 04s.xml">
-      <configuration name="AccountServiceImplTest.depot_should_save_mony_when_client_and_account_exist" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AccountServiceImplTest_depot_should_save_mony_when_client_and_account_exist - 2018.11.17 at 22h 26m 46s.xml">
-      <configuration name="AccountServiceImplTest.depot_should_save_mony_when_client_and_account_exist" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AccountServiceImplTest_depot_should_save_mony_when_client_and_account_exist - 2018.11.17 at 22h 28m 35s.xml">
-      <configuration name="AccountServiceImplTest.depot_should_save_mony_when_client_and_account_exist" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AccountServiceImplTest_depot_should_throw_account_not_found_exception - 2018.11.17 at 22h 39m 57s.xml">
-      <configuration name="AccountServiceImplTest.depot_should_throw_account_not_found_exception" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AccountServiceImplTest_depot_should_throw_account_not_found_exception - 2018.11.17 at 22h 40m 54s.xml">
-      <configuration name="AccountServiceImplTest.depot_should_throw_account_not_found_exception" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AccountServiceImplTest_depot_should_throw_account_not_found_exception - 2018.11.17 at 22h 41m 22s.xml">
-      <configuration name="AccountServiceImplTest.depot_should_throw_account_not_found_exception" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AccountServiceImplTest_depot_should_throw_account_not_found_exception - 2018.11.17 at 22h 41m 55s.xml">
-      <configuration name="AccountServiceImplTest.depot_should_throw_account_not_found_exception" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="AccountServiceImplTest - 2018.11.17 at 22h 59m 03s.xml">
+      <configuration name="AccountServiceImplTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AccountServiceImplTest - 2018.11.17 at 23h 30m 40s.xml">
+      <configuration name="AccountServiceImplTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AccountServiceImplTest - 2018.11.17 at 23h 35m 52s.xml">
+      <configuration name="AccountServiceImplTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AccountServiceImplTest - 2018.11.17 at 23h 36m 12s.xml">
+      <configuration name="AccountServiceImplTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AccountServiceImplTest - 2018.11.17 at 23h 36m 55s.xml">
+      <configuration name="AccountServiceImplTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AccountServiceImplTest - 2018.11.17 at 23h 37m 18s.xml">
+      <configuration name="AccountServiceImplTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AccountServiceImplTest - 2018.11.17 at 23h 37m 26s.xml">
+      <configuration name="AccountServiceImplTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AccountServiceImplTest - 2018.11.17 at 23h 38m 26s.xml">
+      <configuration name="AccountServiceImplTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AccountServiceImplTest - 2018.11.17 at 23h 38m 40s.xml">
+      <configuration name="AccountServiceImplTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AccountServiceImplTest - 2018.11.17 at 23h 43m 08s.xml">
       <configuration name="AccountServiceImplTest" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -392,11 +393,11 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.34341636" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info active="true" anchor="bottom" id="TODO" order="6" visible="true" weight="0.3291815" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.45907474" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Messages" order="10" visible="true" weight="0.20284697" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.20284697" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -450,16 +451,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bank-account-service/src/main/java/com/arolla/banck/acount/service/AccountService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -471,13 +462,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bank-account-service/src/main/java/com/arolla/banck/acount/service/OperationType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -519,28 +503,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bank-account-service/src/main/java/com/arolla/banck/acount/service/AccountServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/bank-account-service/src/main/java/com/arolla/banck/acount/service/AccountRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+        <state relative-caret-position="361">
+          <caret line="39" column="37" lean-forward="true" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
           <folding>
-            <element signature="e#933#934#0" expanded="true" />
-            <element signature="e#1003#1004#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bank-account-service/src/test/java/com/arolla/banck/acount/service/AccountServiceImplTest.java">
+    <entry file="file://$PROJECT_DIR$/bank-account-service/src/main/java/com/arolla/banck/acount/service/OperationNotPermittedException.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bank-account-service/src/main/java/com/arolla/banck/acount/service/OperationType.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="39" column="88" selection-start-line="39" selection-start-column="88" selection-end-line="39" selection-end-column="88" />
+        <state relative-caret-position="51">
+          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bank-account-service/src/main/java/com/arolla/banck/acount/service/AccountRepository.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/math/BigDecimal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="14" column="19" lean-forward="true" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+        <state relative-caret-position="303">
+          <caret line="2622" column="15" selection-start-line="2622" selection-start-column="15" selection-end-line="2622" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bank-account-service/src/main/java/com/arolla/banck/acount/service/Solde.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="14" column="30" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bank-account-service/src/main/java/com/arolla/banck/acount/service/AccountService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -549,11 +549,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bank-account-service/src/main/java/com/arolla/banck/acount/service/Account.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+        <state relative-caret-position="-106">
+          <caret line="34" column="14" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bank-account-service/src/test/java/com/arolla/banck/acount/service/AccountServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="77" column="9" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bank-account-service/src/main/java/com/arolla/banck/acount/service/AccountServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
         </state>
       </provider>
     </entry>

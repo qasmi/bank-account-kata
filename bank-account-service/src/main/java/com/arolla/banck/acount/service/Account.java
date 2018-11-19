@@ -26,8 +26,22 @@ public class Account {
         @Builder.Default
         private Set<Operation> history =  new HashSet<>();
 
-        public Account updateAccount(BigDecimal amount, Clock clock){
+        public Account deposit(BigDecimal amount, Clock clock){
                 updateSolde(amount);
+                updateHistory(amount, clock);
+                return this;
+        }
+
+        public Account withdraw(BigDecimal amount, Clock clock){
+                if(solde.getAmount().compareTo(amount) == -1){
+                        throw new OperationNotPermittedException("Insufficient balance");
+                }
+                updateSolde(amount.multiply(new BigDecimal(-1)));
+                updateHistory(amount, clock);
+                return this;
+        }
+
+        private void updateHistory(BigDecimal amount, Clock clock) {
                 Operation operation = Operation.builder()
                         .id(UUID.randomUUID())
                         .creationDate(clock.instant())
@@ -36,7 +50,6 @@ public class Account {
                         .type(OperationType.DEPOSIT)
                         .build();
                 history.add(operation);
-                return this;
         }
 
         private void updateSolde(BigDecimal amount) {
