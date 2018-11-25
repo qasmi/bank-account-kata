@@ -13,4 +13,10 @@ public class Balance {
         private final BigDecimal amount;
         @Builder.Default
         private final Currency currency = Currency.EUR;
+
+        public boolean isLessThan(BigDecimal amount) {
+                 if(this.amount.compareTo(amount) == -1 )
+                         return true ;
+                 return false;
+        }
 }

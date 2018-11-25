@@ -25,19 +25,17 @@ public class Account {
         @Builder.Default
         private List<Operation> history =  new ArrayList<>();
 
-        public Account deposit(BigDecimal amount, Clock clock){
+        public void deposit(BigDecimal amount, Clock clock){
                 updateBalance(amount);
                 updateHistory(OperationType.DEPOSIT, amount, clock);
-                return this;
         }
 
-        public Account withdraw(BigDecimal amount, Clock clock){
-                if(balance.getAmount().compareTo(amount) == -1){
+        public void withdraw(BigDecimal amount, Clock clock){
+                if(balance.isLessThan(amount)){
                         throw new OperationNotPermittedException("Insufficient balance");
                 }
-                updateBalance(amount.multiply(new BigDecimal(-1)));
+                updateBalance(amount.multiply(BigDecimal.valueOf(-1)));
                 updateHistory(OperationType.WITHDRAW, amount, clock);
-                return this;
         }
 
         private void updateHistory(OperationType operationType, BigDecimal amount, Clock clock) {
